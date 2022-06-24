@@ -5,6 +5,13 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* TYPOGRAPHY */
 
 /* 62.5% of 16px from the browser is 10px */
@@ -114,7 +121,7 @@ a {
   margin-right: 2rem;
 }
 .list--tick {
-  list-style-image: url("../icons/tick.svg");
+  list-style-image: url("../images/tick.svg");
   padding-left: 3rem;
 }
 .list--tick .list__item {
@@ -146,3 +153,62 @@ a {
   width: 64px;
 }
 /* icons dont need scaling in wider screens*/
+
+/*  BUTTONS */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #2584ffd1;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background-color: #00d9ffd1;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover {
+  background-color: #ff3400d1;
+}
+.btn--outline {
+  background-color: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+  border: 2px solid var(--color-headings);
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+/* end of buttons */
