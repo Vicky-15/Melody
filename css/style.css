@@ -163,10 +163,10 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   padding: 2rem 3rem;
-  text-transform: uppercase;
   text-align: center;
-  white-space: nowrap;
+  text-transform: uppercase;
   transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
 .btn--primary {
@@ -194,17 +194,17 @@ a {
 }
 .btn--outline {
   background-color: #fff;
-  color: var(--color-headings);
   border: 2px solid var(--color-headings);
+  color: var(--color-headings);
 }
 .btn--outline:hover {
   background-color: var(--color-headings);
-  color: #fff;
   border: 2px solid var(--color-headings);
+  color: #fff;
 }
 .btn--block {
-  width: 100%;
   display: inline-block;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .btn {
